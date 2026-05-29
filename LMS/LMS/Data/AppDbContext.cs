@@ -10,6 +10,6 @@ namespace library_management_system.Data
         {
         }
 
-        public DbSet<USER> Users { get; set; }
+        public DbSet<USER> M_USER { get; set; }
     }
 }

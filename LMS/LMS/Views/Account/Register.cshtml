@@ -1,4 +1,9 @@
-﻿<style>
+﻿@using LMS.ViewModels
+<link rel="stylesheet" href="~/css/popup.css" />
+<script src="~/js/popup.js"></script>
+
+
+<style>
     body {
         margin: 0;
         height: 100vh;
@@ -65,20 +70,39 @@
     <h2>Register</h2>
 
     <form method="post">
-        <input name="username" placeholder="Username" />
-        <input name="password" type="password" placeholder="Password" />
 
-        <!-- 2 nút nằm ngang -->
+        <input name="username" placeholder="Tên tài khoản" />
+        <input name="password" type="password" placeholder="Mật khẩu" />
+        <input name="fullname" placeholder="Họ và Tên" />
+        <input name="phone"
+               type="tel"
+               placeholder="Số điện thoại"
+               inputmode="numeric"
+               oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+               maxlength="11" />
+
+        <!-- 2 button nằm ngang -->
         <div class="btn-group">
             <button type="submit" class="btn register-btn">
-                Register
+                Đăng ký
             </button>
         </div>
+
+        <!-- 👇 THÊM DÒNG NÀY -->
+        <div style="margin-top: 15px; text-align: center;">
+            <a href="/Account/Login" style="color: #fff; text-decoration: underline;">
+                Đã có tài khoản? Đăng nhập
+            </a>
+        </div>
+
     </form>
 
-    <!-- Thông báo lỗi -->
-    @if (ViewBag.Error != null)
-    {
-        <div class="error">@ViewBag.Error</div>
-    }
 </div>
+@if (TempData["Message"] != null)
+{
+    @await Html.PartialAsync("_Popup", new PopupModel
+    {
+        Message = TempData["Message"].ToString(),
+        Type = TempData["Type"]?.ToString()
+    })
+}

@@ -1,86 +1,85 @@
-﻿<style>
+﻿@using LMS.ViewModels
+<link rel="stylesheet" href="~/css/popup.css" />
+<script src="~/js/popup.js"></script>
+
+<style>
     body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdH70KlGrgGhXeOldHyZLUKlJec3AgjQd9A&s') no-repeat center center fixed;
-        background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdH70KlGrgGhXeOldHyZLUKlJec3AgjQd9A&s') no-repeat center center fixed;
+    background-size: cover;
     }
 
     .login-box {
-        width: 320px;
-        padding: 25px;
-        background: rgba(0,0,0,0.7);
-        color: white;
-        border-radius: 10px;
+    width: 320px;
+    padding: 25px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 10px;
     }
 
     input {
-        width: 100%;
-        padding: 8px;
-        margin: 8px 0;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
     }
 
     .btn-group {
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
     }
 
     .btn {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        cursor: pointer;
-        color: white;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
     }
 
     .login-btn {
-        background: #007bff;
+    background: #007bff;
     }
 
-        .login-btn:hover {
-            background: #0056b3;
-        }
+    .login-btn:hover {
+    background: #0056b3;
+    }
 
     .register-btn {
-        background: #28a745;
+    background: #28a745;
     }
 
-        .register-btn:hover {
-            background: #1e7e34;
-        }
-
-    .error {
-        color: #ff4d4d;
-        margin-top: 10px;
-        text-align: center;
-        font-weight: bold;
+    .register-btn:hover {
+    background: #1e7e34;
     }
 </style>
 
 <div class="login-box">
-    <h2>Login</h2>
+    <h2>Đăng nhập</h2>
 
     <form method="post">
-        <input name="username" placeholder="Username" />
-        <input name="password" type="password" placeholder="Password" />
+        <input name="username" placeholder="Tên tài khoản" />
+        <input name="password" type="password" placeholder="Mật khẩu" />
 
-        <!-- 2 nút nằm ngang -->
         <div class="btn-group">
-            <button type="submit" class="btn login-btn">Login</button>
+            <button type="submit" class="btn login-btn">Đăng nhập</button>
             <button type="button" class="btn register-btn"
-                    onclick="window.location.href='/Account/Register'">
-                Register
+                    onclick="location.href='/Account/Register'">
+                Đăng ký
             </button>
         </div>
     </form>
-
-    <!-- Thông báo lỗi -->
-    @if (ViewBag.Error != null)
-    {
-        <div class="error">@ViewBag.Error</div>
-    }
 </div>
+
+@if (TempData["Message"] != null)
+{
+    @await Html.PartialAsync("_Popup", new PopupModel
+    {
+        Message = TempData["Message"].ToString(),
+        Type = TempData["Type"]?.ToString()
+    })
+}

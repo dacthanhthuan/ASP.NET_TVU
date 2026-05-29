@@ -1,0 +1,20 @@
+﻿@using LMS.ViewModels
+@model PopupModel
+
+<div class="popup-overlay">
+    <div class="popup-box @Model.Type">
+
+        <div class="popup-title">
+            Thông báo
+        </div>
+
+        <div class="popup-message">
+            @Model.Message
+        </div>
+
+        <button class="popup-btn" onclick="closePopup()">
+            OK
+        </button>
+
+    </div>
+</div>
