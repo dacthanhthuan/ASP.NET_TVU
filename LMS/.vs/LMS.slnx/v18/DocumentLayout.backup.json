@@ -3,52 +3,12 @@
   "WorkspaceRootPath": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\views\\shared\\_popup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\shared\\_popup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\viewmodels\\popupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\viewmodels\\popupmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\lms.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\lms.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\wwwroot\\css\\popup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\wwwroot\\css\\popup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,112 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "LMS\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "LMS\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-29T03:57:19.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "LMS\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "LMS\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-29T03:44:12.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Popup.cshtml",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Shared\\_Popup.cshtml",
-              "RelativeDocumentMoniker": "LMS\\Views\\Shared\\_Popup.cshtml",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Shared\\_Popup.cshtml",
-              "RelativeToolTip": "LMS\\Views\\Shared\\_Popup.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-29T02:53:29.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PopupModel.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\ViewModels\\PopupModel.cs",
-              "RelativeDocumentMoniker": "LMS\\ViewModels\\PopupModel.cs",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\ViewModels\\PopupModel.cs",
-              "RelativeToolTip": "LMS\\ViewModels\\PopupModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T02:52:35.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "popup.css",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\wwwroot\\css\\popup.css",
-              "RelativeDocumentMoniker": "LMS\\wwwroot\\css\\popup.css",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\wwwroot\\css\\popup.css",
-              "RelativeToolTip": "LMS\\wwwroot\\css\\popup.css",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-29T02:50:46.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "LMS\\ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "LMS\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T02:46:02.74Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "LMS\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "LMS\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T02:37:25.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\appsettings.json",
-              "RelativeDocumentMoniker": "LMS\\appsettings.json",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\appsettings.json",
-              "RelativeToolTip": "LMS\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-26T08:01:06.224Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -172,48 +28,22 @@
               "RelativeDocumentMoniker": "LMS\\Program.cs",
               "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Program.cs",
               "RelativeToolTip": "LMS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-26T08:00:14.153Z",
+              "WhenOpened": "2026-05-29T07:24:27.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "LMS\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "LMS\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T07:17:51.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LMS.http",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\LMS.http",
-              "RelativeDocumentMoniker": "LMS\\LMS.http",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\LMS.http",
-              "RelativeToolTip": "LMS\\LMS.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-05-29T03:46:52.267Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "LMS\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "LMS\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LMS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LMS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-25T06:56:16.849Z",
+              "WhenOpened": "2026-05-29T03:44:12.815Z",
               "EditorCaption": ""
             }
           ]

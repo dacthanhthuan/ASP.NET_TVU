@@ -13,8 +13,16 @@
     <style>
             body {
                 background: #f8f9fa;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
             }
 
+            .content {
+                flex: 1;
+            }
+
+            /* HERO */
             .hero {
                 background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
                 height: 300px;
@@ -27,121 +35,231 @@
 
                 .hero h1 {
                     background: rgba(0,0,0,0.5);
-                    padding: 15px;
+                    padding: 15px 25px;
                     border-radius: 10px;
                 }
 
-            .card:hover {
-                transform: scale(1.03);
-                transition: 0.3s;
+            /* SECTION */
+            .search-section{
+                margin-top: 15px;
+            }
+            .category-section{
+                margin-top: 20px;
+            }
+            .suggestion-section {
+                margin-top: 25px;
             }
 
+            /* CARD */
+            .card {
+                height: 100%;
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 8px rgba(0,0,0,.08);
+                transition: all .3s ease;
+            }
+
+                .card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+                }
+
+                .card img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+            .card-body {
+                text-align: center;
+            }
+
+                .card-body h5 {
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                }
+
+                .card-body p {
+                    color: #6c757d;
+                    margin-bottom: 0;
+                }
+
+            /* CATEGORY CARD */
+            .category-section .card {
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+            /* FOOTER */
             .footer {
                 background: #343a40;
                 color: white;
-                padding: 20px;
-                margin-top: 40px;
                 text-align: center;
+                padding: 10px;
             }
+
+                .footer p {
+                    margin: 0;
+                }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">🍲 Meal Planner</a>
+    <div class="content">
 
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Món ăn</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Thực đơn</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Đăng nhập</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
 
-    <!-- HERO -->
-    <div class="hero">
-        <div>
-            <h1>Gợi ý món ăn & Lập thực đơn cho gia đình</h1>
-            <p>Tìm món ngon mỗi ngày - dễ nấu - tiết kiệm thời gian</p>
-        </div>
-    </div>
+                <a class="navbar-brand" href="#">
+                    🍲 Meal Planner
+                </a>
 
-    <!-- SEARCH -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <input class="form-control" placeholder="Tìm món ăn..." />
-            </div>
-        </div>
-    </div>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <!-- CATEGORY -->
-    <div class="container mt-4">
-        <h4>Danh mục món ăn</h4>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Trang chủ</a>
+                        </li>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card p-3 text-center">🍜 Món nước</div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 text-center">🍗 Món mặn</div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 text-center">🥗 Ăn chay</div>
-            </div>
-            <div class="col-md-3">
-                <div class="card p-3 text-center">🍰 Tráng miệng</div>
-            </div>
-        </div>
-    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Món ăn</a>
+                        </li>
 
-    <!-- SUGGESTIONS -->
-    <div class="container mt-5">
-        <h4>Món ăn gợi ý hôm nay</h4>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thực đơn</a>
+                        </li>
 
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?food" />
-                    <div class="card-body">
-                        <h5>Canh chua cá</h5>
-                        <p>Dễ nấu - 30 phút</p>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?noodles" />
-                    <div class="card-body">
-                        <h5>Bún bò Huế</h5>
-                        <p>Đậm đà - truyền thống</p>
-                    </div>
-                </div>
             </div>
+        </nav>
 
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://source.unsplash.com/400x250/?rice" />
-                    <div class="card-body">
-                        <h5>Cơm gà</h5>
-                        <p>Nhanh - tiện - ngon</p>
-                    </div>
+        <!-- HERO -->
+        <div class="hero">
+            <div>
+                <h1>Gợi ý món ăn & Lập thực đơn cho gia đình</h1>
+                <p class="mt-3">
+                    Tìm món ngon mỗi ngày - dễ nấu - tiết kiệm thời gian
+                </p>
+            </div>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="container search-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <input class="form-control form-control-lg"
+                           placeholder="🔍 Tìm món ăn..." />
                 </div>
             </div>
         </div>
+
+        <!-- CATEGORY -->
+        <div class="container category-section">
+
+            <h3 class="mb-4 text-center">
+                Danh mục món ăn
+            </h3>
+
+            <div class="row g-4">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card p-4 text-center">
+                        🍜 Món nước
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card p-4 text-center">
+                        🍗 Món mặn
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card p-4 text-center">
+                        🥗 Ăn chay
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card p-4 text-center">
+                        🍰 Tráng miệng
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SUGGESTIONS -->
+        <div class="container suggestion-section">
+
+            <h3 class="mb-4 text-center">
+                Món ăn gợi ý hôm nay
+            </h3>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./images/img_canhchuaca.webp" alt="Canh chua cá">
+
+                        <div class="card-body">
+                            <h5>Canh chua cá</h5>
+                            <p>Dễ nấu - 30 phút</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./images/img_bunbo.webp" alt="Bún bò Huế">
+
+                        <div class="card-body">
+                            <h5>Bún bò Huế</h5>
+                            <p>Đậm đà - truyền thống</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="./images/img_comga.jpg" alt="Cơm gà">
+
+                        <div class="card-body">
+                            <h5>Cơm gà</h5>
+                            <p>Nhanh - tiện - ngon</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     <!-- FOOTER -->
-    <div class="footer">
-        <p>© 2026 Meal Planner - Gợi ý nấu ăn cho gia đình</p>
-    </div>
+    <footer class="footer">
+        <p>
+            © 2026 Meal Planner - Gợi ý nấu ăn cho gia đình
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
