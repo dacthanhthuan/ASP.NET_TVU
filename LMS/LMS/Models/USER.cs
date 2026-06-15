@@ -15,7 +15,8 @@ namespace LMS.Models
 
         public string Fullname { get; set; }
         public string Phone { get; set; }
+        public int Role { get; set; }
 
-
+        public int Status { get; set; }
     }
 }

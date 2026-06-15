@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Program.cs",
-              "RelativeDocumentMoniker": "LMS\\Program.cs",
-              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Program.cs",
-              "RelativeToolTip": "LMS\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LMS\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LMS\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T07:24:27.962Z",
+              "WhenOpened": "2026-06-15T09:28:25.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LMS\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LMS\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAUwKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T06:19:19Z",
               "EditorCaption": ""
             },
             {
@@ -41,9 +62,22 @@
               "RelativeDocumentMoniker": "LMS\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "LMS\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAkwAYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAAAEIBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-29T03:44:12.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "USER.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Models\\USER.cs",
+              "RelativeDocumentMoniker": "LMS\\Models\\USER.cs",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Models\\USER.cs",
+              "RelativeToolTip": "LMS\\Models\\USER.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T07:00:59.6Z",
               "EditorCaption": ""
             }
           ]
