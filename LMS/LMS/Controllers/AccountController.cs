@@ -61,21 +61,10 @@ public class AccountController : Controller
             {
                 if (reader.Read())
                 {
-                    HttpContext.Session.SetString(
-                        "Username",
-                        reader["Username"].ToString()
-                    );
-
-                    HttpContext.Session.SetString(
-                        "Fullname",
-                        reader["Fullname"].ToString()
-                    );
-
-                    HttpContext.Session.SetString(
-                        "Phone",
-                        reader["Phone"].ToString()
-                    );
-
+                    HttpContext.Session.SetString("Username",reader["Username"].ToString());
+                    HttpContext.Session.SetString("Fullname",reader["Fullname"].ToString());
+                    HttpContext.Session.SetString("Phone",reader["Phone"].ToString());
+                    HttpContext.Session.SetString("Role", reader["Role"].ToString());
 
                     return RedirectToAction("Index", "Home");
                 }
