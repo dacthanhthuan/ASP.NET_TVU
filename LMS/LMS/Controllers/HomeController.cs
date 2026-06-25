@@ -1,5 +1,5 @@
-﻿using library_management_system.Data;
-using LMS.Helpers;
+﻿using LMS.Helpers;
+using library_management_system.Data;
 using LMS.Models;
 using LMS.Models.DTO;
 using LMS.ViewModels;
@@ -75,12 +75,32 @@ public class HomeController : Controller
                             FOOD_NAME = reader.GetString(1),
                             DESCRIPTION = reader.IsDBNull(2) ? null : reader.GetString(2),
                             IMAGE_URL = reader.GetString(3),
-                            COOK_TIME = reader.GetInt32(4),
-                            IS_ACTIVE = reader.GetInt32(5)
+                            CATEGORY_ID = reader.GetInt32(4),
+                            COOK_TIME = reader.GetInt32(5),
+                            IS_ACTIVE = reader.GetInt32(6)
                         });
                     }
 
                     result.Foods = foods;
+
+                    // TABLE 3 - WEEKLY MENU
+                    await reader.NextResultAsync();
+
+                    var weeklyMenus = new List<WEEKLY_MENU>();
+
+                    while (await reader.ReadAsync())
+                    {
+                        weeklyMenus.Add(new WEEKLY_MENU
+                        {
+                            ID = reader.GetInt32(0),
+                            DAY_NAME = reader.GetString(1),
+                            BREAKFAST = reader.IsDBNull(2) ? null : reader.GetString(2),
+                            LUNCH = reader.IsDBNull(3) ? null : reader.GetString(3),
+                            DINNER = reader.IsDBNull(4) ? null : reader.GetString(4)
+                        });
+                    }
+
+                    result.WeeklyMenus = weeklyMenus;
                 }
             }
         }

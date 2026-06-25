@@ -1,5 +1,5 @@
-using library_management_system.Data;
 using Microsoft.EntityFrameworkCore;
+using library_management_system.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -11,6 +11,7 @@ namespace LMS.Models
         public string? IMAGE_URL { get; set; }
         public string? DESCRIPTION { get; set; }
         public int? COOK_TIME { get; set; }
+        public int? CATEGORY_ID { get; set; }
         public int IS_ACTIVE { get; set; }
     }
 }

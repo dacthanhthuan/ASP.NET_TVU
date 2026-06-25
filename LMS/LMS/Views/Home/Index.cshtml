@@ -192,7 +192,7 @@
                         @if (role == "1")
                         {
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="/Admin/Food_Management">
                                     🍲 Quản lý món ăn
                                 </a>
                             </li>
@@ -315,7 +315,7 @@
             </h3>
 
             <div class="row g-4">
-                 @foreach (var item in Model.Foods)
+                @foreach (var item in Model.Foods)
                 {
                 <div class="col-md-4">
                     <div class="card h-100">
@@ -363,42 +363,15 @@
                             </thead>
 
                             <tbody>
-
-                                <tr>
-                                    <td class="fw-bold">Thứ 2</td>
-                                    <td>Bánh mì trứng</td>
-                                    <td>Cá kho tộ</td>
-                                    <td>Canh chua cá</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="fw-bold">Thứ 3</td>
-                                    <td>Phở bò</td>
-                                    <td>Gà kho gừng</td>
-                                    <td>Rau muống xào</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="fw-bold">Thứ 4</td>
-                                    <td>Xôi mặn</td>
-                                    <td>Thịt kho trứng</td>
-                                    <td>Canh bí đỏ</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="fw-bold">Thứ 5</td>
-                                    <td>Bún thịt nướng</td>
-                                    <td>Trứng chiên</td>
-                                    <td>Cải xào tỏi</td>
-                                </tr>
-
-                                <tr>
-                                    <td class="fw-bold">Thứ 6</td>
-                                    <td>Cháo gà</td>
-                                    <td>Cá chiên</td>
-                                    <td>Canh rau ngót</td>
-                                </tr>
-
+                                @foreach (var item in Model.WeeklyMenus)
+                                {
+                                    <tr>
+                                        <td class="fw-bold">@item.DAY_NAME</td>
+                                        <td>@item.BREAKFAST</td>
+                                        <td>@item.LUNCH</td>
+                                        <td>@item.DINNER</td>
+                                    </tr>
+                                }           
                             </tbody>
 
                         </table>
