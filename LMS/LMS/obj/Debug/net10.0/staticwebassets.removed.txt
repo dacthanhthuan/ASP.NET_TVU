@@ -1,0 +1,2 @@
+D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\images\img_bunbo.webp
+D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\images\img_comga.jpg

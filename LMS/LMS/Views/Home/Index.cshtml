@@ -1,9 +1,6 @@
-﻿@{
-    Layout = null;
-}
-@using Microsoft.AspNetCore.Http
-
+﻿@model LMS.Models.DTO.HomeDataDto
 @{
+    Layout = null;
     var role = Context.Session.GetString("Role");
     var fullname = Context.Session.GetString("Fullname");
 }
@@ -108,6 +105,60 @@
                 .footer p {
                     margin: 0;
                 }
+
+            .table-hover tbody tr:hover {
+                background-color: #f1fdf5;
+                transition: 0.2s;
+            }
+
+            .table thead th {
+                font-size: 15px;
+                letter-spacing: 0.5px;
+            }
+
+            .table td {
+                font-size: 14px;
+            }
+
+            .menu-card {
+                background: #fff;
+                border-radius: 16px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                transition: 0.25s ease;
+                cursor: pointer;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .menu-card:hover {
+                    transform: translateY(-6px);
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+                }
+
+            .icon-wrapper img {
+                width: 65px;
+                height: 65px;
+                object-fit: contain;
+                margin-bottom: 10px;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #333;
+            }
+
+            .desc {
+                font-size: 12px;
+                color: #777;
+                margin-top: 5px;
+            }
+
     </style>
 </head>
 
@@ -138,24 +189,17 @@
                                 🏠 Trang chủ
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                🍲 Món ăn
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                📅 Thực đơn
-                            </a>
-                        </li>
-
                         @if (role == "1")
                         {
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
-                                    👥 Quản lý người dùng
+                                    🍲 Quản lý món ăn
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    📅 Quản lý thực đơn
                                 </a>
                             </li>
                         }
@@ -234,29 +278,30 @@
 
             <div class="row g-4">
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card p-4 text-center">
-                        🍜 Món nước
-                    </div>
-                </div>
+                @foreach (var item in Model.Categories)
+                {
+                    <div class="col-md-3 col-sm-6">
+                        <div class="menu-card">
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card p-4 text-center">
-                        🍗 Món mặn
-                    </div>
-                </div>
+                            <div class="icon-wrapper">
+                                <img src="@item.ICON"
+                                     alt="@item.CATEGORY_NAME" />
+                            </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card p-4 text-center">
-                        🥗 Ăn chay
-                    </div>
-                </div>
+                            <div class="title">
+                                @item.CATEGORY_NAME
+                            </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="card p-4 text-center">
-                        🍰 Tráng miệng
+                            @if (!string.IsNullOrEmpty(item.DESCRIPTION))
+                            {
+                                <div class="desc">
+                                    @item.DESCRIPTION
+                                </div>
+                            }
+
+                        </div>
                     </div>
-                </div>
+                }
 
             </div>
 
@@ -270,38 +315,96 @@
             </h3>
 
             <div class="row g-4">
-
+                 @foreach (var item in Model.Foods)
+                {
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="./images/img_canhchuaca.webp" alt="Canh chua cá">
+                        <img src="@item.IMAGE_URL" alt="@item.FOOD_NAME">
 
                         <div class="card-body">
-                            <h5>Canh chua cá</h5>
-                            <p>Dễ nấu - 30 phút</p>
+                            <h5>@item.FOOD_NAME</h5>
+                                <span class="badge @(item.COOK_TIME <= 15 ? "bg-success" :
+                                                           item.COOK_TIME <= 30 ? "bg-warning text-dark" :
+                                                           "bg-danger")">
+                                    @(item.COOK_TIME <= 15 ? "Siêu dễ nấu" :
+                                      item.COOK_TIME <= 30 ? "Dễ nấu" :
+                                      "Khó nấu")
+                                </span>
                         </div>
                     </div>
                 </div>
+                }
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="./images/img_bunbo.webp" alt="Bún bò Huế">
+        </div>
 
-                        <div class="card-body">
-                            <h5>Bún bò Huế</h5>
-                            <p>Đậm đà - truyền thống</p>
-                        </div>
+        <!-- MEAL PLAN -->
+        <div class="container mt-5">
+
+            <h3 class="mb-4 text-center">
+                📅 Danh sách thực đơn tuần
+            </h3>
+
+            <div class="card shadow-sm border-0">
+
+                <div class="card-body p-0">
+
+                    <div class="table-responsive">
+
+                        <table class="table table-hover mb-0 text-center align-middle">
+
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Ngày</th>
+                                    <th>Buổi sáng</th>
+                                    <th>Buổi trưa</th>
+                                    <th>Buổi tối</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td class="fw-bold">Thứ 2</td>
+                                    <td>Bánh mì trứng</td>
+                                    <td>Cá kho tộ</td>
+                                    <td>Canh chua cá</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="fw-bold">Thứ 3</td>
+                                    <td>Phở bò</td>
+                                    <td>Gà kho gừng</td>
+                                    <td>Rau muống xào</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="fw-bold">Thứ 4</td>
+                                    <td>Xôi mặn</td>
+                                    <td>Thịt kho trứng</td>
+                                    <td>Canh bí đỏ</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="fw-bold">Thứ 5</td>
+                                    <td>Bún thịt nướng</td>
+                                    <td>Trứng chiên</td>
+                                    <td>Cải xào tỏi</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="fw-bold">Thứ 6</td>
+                                    <td>Cháo gà</td>
+                                    <td>Cá chiên</td>
+                                    <td>Canh rau ngót</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="./images/img_comga.jpg" alt="Cơm gà">
-
-                        <div class="card-body">
-                            <h5>Cơm gà</h5>
-                            <p>Nhanh - tiện - ngon</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>

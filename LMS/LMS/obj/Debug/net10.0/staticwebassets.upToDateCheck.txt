@@ -1,8 +1,7 @@
 wwwroot\css\popup.css
 wwwroot\favicon.ico
-wwwroot\images\img_bunbo.webp
+wwwroot\uploads\icons\img_bunbo.webp
 wwwroot\images\img_canhchuaca.webp
-wwwroot\images\img_comga.jpg
 wwwroot\js\popup.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -65,6 +64,10 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\uploads\icons\monnuoc_category.png
+wwwroot\uploads\icons\monman_category.png
+wwwroot\uploads\icons\img_canhchuaca.webp
+wwwroot\uploads\icons\img_comga.jpg
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\css\popup.css
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\favicon.ico
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\js\popup.js

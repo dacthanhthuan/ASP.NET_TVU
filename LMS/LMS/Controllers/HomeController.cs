@@ -1,6 +1,7 @@
 ﻿using library_management_system.Data;
 using LMS.Helpers;
 using LMS.Models;
+using LMS.Models.DTO;
 using LMS.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -17,7 +18,7 @@ public class HomeController : Controller
     {
         _context = context;
     }
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
         var username = HttpContext.Session.GetString("Username");
 
@@ -26,7 +27,65 @@ public class HomeController : Controller
             return RedirectToAction("Login", "Account");
         }
 
-        return View();
+        var result = await GetHomeData();
+
+        return View(result);
+    }
+
+    public async Task<HomeDataDto> GetHomeData()
+    {
+        var result = new HomeDataDto();
+
+        using (var connection = _context.Database.GetDbConnection())
+        {
+            await connection.OpenAsync();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "sp_GetHomeData";
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    // TABLE 1 - CATEGORY
+                    var categories = new List<CATEGORY>();
+                    while (await reader.ReadAsync())
+                    {
+                        categories.Add(new CATEGORY
+                        {
+                            CATEGORY_ID = reader.GetInt32(0),
+                            CATEGORY_NAME = reader.GetString(1),
+                            ICON = reader.GetString(2),
+                            DESCRIPTION = reader.IsDBNull(3) ? null : reader.GetString(3),
+                            IS_ACTIVE = reader.GetInt32(4)
+                        });
+                    }
+
+                    result.Categories = categories;
+
+                    // TABLE 2 - FOOD
+                    await reader.NextResultAsync();
+
+                    var foods = new List<FOOD>();
+                    while (await reader.ReadAsync())
+                    {
+                        foods.Add(new FOOD
+                        {
+                            FOOD_ID = reader.GetInt32(0),
+                            FOOD_NAME = reader.GetString(1),
+                            DESCRIPTION = reader.IsDBNull(2) ? null : reader.GetString(2),
+                            IMAGE_URL = reader.GetString(3),
+                            COOK_TIME = reader.GetInt32(4),
+                            IS_ACTIVE = reader.GetInt32(5)
+                        });
+                    }
+
+                    result.Foods = foods;
+                }
+            }
+        }
+
+        return result;
     }
 
 }

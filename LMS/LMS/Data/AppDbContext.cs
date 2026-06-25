@@ -11,5 +11,7 @@ namespace library_management_system.Data
         }
 
         public DbSet<USER> M_USER { get; set; }
+        public DbSet<CATEGORY> M_CATEGORY { get; set; }
+        public DbSet<FOOD> M_FOOD { get; set; }
     }
 }
