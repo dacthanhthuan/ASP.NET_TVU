@@ -1,10 +1,5 @@
 wwwroot\css\popup.css
 wwwroot\favicon.ico
-wwwroot\images\19ccf46e-b9e1-4d39-94e1-3f3af33a05d1.jpg
-wwwroot\images\1dfd8cc1-7709-4268-b1ba-ead39cc0a833.jpg
-wwwroot\images\7483f3f0-5d7a-4bce-ba92-b789f842fb43.jpg
-wwwroot\images\9168c3a8-3645-4c2e-ae0f-0a8152760d8d.jpg
-wwwroot\images\e5dcff4f-41b7-4f92-89ff-5e9ac7ed6dbd.jpg
 wwwroot\js\popup.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -69,6 +64,13 @@ wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\uploads\icons\monman_category.png
 wwwroot\uploads\icons\monnuoc_category.png
+wwwroot\images\e5dcff4f-41b7-4f92-89ff-5e9ac7ed6dbd.jpg
+wwwroot\images\7483f3f0-5d7a-4bce-ba92-b789f842fb43.jpg
+wwwroot\images\1dfd8cc1-7709-4268-b1ba-ead39cc0a833.jpg
+wwwroot\images\19ccf46e-b9e1-4d39-94e1-3f3af33a05d1.jpg
+wwwroot\images\9168c3a8-3645-4c2e-ae0f-0a8152760d8d.jpg
+wwwroot\images\8dcc4b72-a192-411f-9e78-db960145f573.jpg
+wwwroot\images\f0a0fc34-4815-4f5a-97db-ae456df7473a.jpg
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\css\popup.css
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\favicon.ico
 D:\ASP.NET\ASP.NET_TVU\LMS\LMS\wwwroot\js\popup.js

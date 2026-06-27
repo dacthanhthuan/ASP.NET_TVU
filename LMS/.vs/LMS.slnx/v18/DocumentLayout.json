@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "LMS\\Controllers\\AdminController.cs",
               "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AdminController.cs",
               "RelativeToolTip": "LMS\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAnwEcAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAnwEkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T03:02:02.983Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "LMS\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T07:04:31.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T07:04:31.08Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "LMS\\Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-26T06:31:13.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T06:31:13.482Z"
             }
           ]
         }
