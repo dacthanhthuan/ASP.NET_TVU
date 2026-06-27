@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MRGAO\\source\\repos\\LMS\\",
+  "WorkspaceRootPath": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|c:\\users\\mrgao\\source\\repos\\lms\\lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|solutionrelative:lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|c:\\users\\mrgao\\source\\repos\\lms\\lms\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|solutionrelative:lms\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|c:\\users\\mrgao\\source\\repos\\lms\\lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|solutionrelative:lms\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|c:\\users\\mrgao\\source\\repos\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|c:\\users\\mrgao\\source\\repos\\lms\\lms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35241C7F-7CD3-4030-BB5C-19313B0D4F6F}|LMS\\LMS.csproj|solutionrelative:lms\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|d:\\asp.net\\asp.net_tvu\\lms\\lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0AE40B2-0035-5EB3-B647-8A17B0EF43A6}|LMS\\LMS.csproj|solutionrelative:lms\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,73 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Program.cs",
-              "RelativeDocumentMoniker": "LMS\\Program.cs",
-              "ToolTip": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Program.cs",
-              "RelativeToolTip": "LMS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "LMS\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "LMS\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAnwEcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T06:56:42.128Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-06-26T03:02:02.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "LMS\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "LMS\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-25T07:22:38.304Z",
-              "EditorCaption": ""
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "LMS\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "LMS\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-26T07:04:31.08Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "LMS\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "LMS\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T07:17:51.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "LMS\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\ASP.NET\\ASP.NET_TVU\\LMS\\LMS\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "LMS\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwEcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-25T06:56:16.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "USER.cs",
-              "DocumentMoniker": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Models\\USER.cs",
-              "RelativeDocumentMoniker": "LMS\\Models\\USER.cs",
-              "ToolTip": "C:\\Users\\MRGAO\\source\\repos\\LMS\\LMS\\Models\\USER.cs",
-              "RelativeToolTip": "LMS\\Models\\USER.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-25T07:12:13.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-26T06:31:13.482Z"
             }
           ]
         }
